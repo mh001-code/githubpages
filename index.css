@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+/* Garantir que o box-sizing seja aplicado de forma global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     color: white;
     background-color: black;
@@ -9,7 +16,9 @@ body {
 }
 
 .container {
-    padding: 0px 50px;
+    padding: 0 50px; /* Ajustando o padding para não sobrecarregar o layout */
+    width: 100%; /* Garantir que o container ocupe 100% da largura */
+    margin: 0 auto; /* Centralizar o conteúdo */
 }
 
 ul {

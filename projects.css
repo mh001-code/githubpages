@@ -1,94 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-body {
-    color: white;
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    body {
+        color: white;
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-.container {
-    padding: 0px 50px;
-}
+    .container {
+        padding: 0px 50px;
+    }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 16px;
-}
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 16px;
+    }
 
-a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 
-a:hover {
-    color: #3CB371;
-}
+    a:hover {
+        color: #3CB371;
+        text-decoration: underline;
+    }
 
-header {
-    text-align: center;
-    margin: 40px 0;
-}
+    header {
+        text-align: center;
+        margin: 40px 0;
+    }
 
-header h1 {
-    color: #3CB371;
-}
+    header h1 {
+        color: #3CB371;
+    }
 
-header p {
-    color: #bbb;
-    font-size: 1.2em;
-}
+    header p {
+        color: #bbb;
+        font-size: 1.2em;
+    }
 
-.project-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-.project-item {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+    .project-item {
+        background-color: #222;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
 
-.project-item h3 {
-    color: #3CB371;
-    margin-bottom: 10px;
-}
+    .project-item h3 {
+        color: #3CB371;
+        margin-bottom: 10px;
+    }
 
-.project-item p {
-    color: #bbb;
-    font-size: 1.1em;
-}
+    .project-item p {
+        color: #bbb;
+        font-size: 1.1em;
+    }
 
-.project-item a {
-    color: #3CB371;
-    margin-top: 10px;
-    display: inline-block;
-    font-weight: bold;
-}
+    .project-item a {
+        color: #3CB371;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: bold;
+    }
 
-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
+    .carousel {
+        position: relative;
+        margin: 30px auto; /* Centraliza o carrossel horizontalmente */
+        width: 75%; /* Define a largura do carrossel */
+    }
+    
+    .carousel-container {
+        width: 100%; /* Garante que o container ocupe toda a largura do carrossel */
+        overflow: hidden; /* Esconde as imagens que estão fora do container */
+        margin: 0 auto; /* Centraliza o conteúdo do container */
+    }
+    
 
-footer a {
-    margin: 20px;
-    text-align: center;
-}
+    .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out; /* Animação ao mudar de imagem */
+    }
 
-footer img {
-    width: 40px;
-    height: 40px;
-}
+    .carousel-slide img {
+        width: 100%; /* Garante que as imagens ocupem o tamanho do container */
+        flex-shrink: 0; /* Evita que as imagens reduzam */
+        object-fit: cover; /* Ajusta a imagem para caber no espaço */
+    }
 
-footer p {
-    margin-top: 5px;
-}
+    .prev-btn, .next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+
+    .prev-btn:hover, .next-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev-btn:active, .next-btn:active {
+        transform: translateY(-50%) scale(0.95); /* Pequeno zoom ao clicar */
+    }    
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    footer a {
+        margin: 20px;
+        text-align: center;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer p {
+        margin-top: 5px;
+    }

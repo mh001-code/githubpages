@@ -1,19 +1,5 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-    @media (max-width: 768px) {
-        .carousel {
-            width: 90%; /* Aumenta a largura do carrossel em telas menores */
-        }
-    
-        .carousel-slide img {
-            height: auto; /* Garante que as imagens se ajustem corretamente */
-        }
-    
-        .prev-btn, .next-btn {
-            padding: 8px; /* Reduz o tamanho dos botões de navegação */
-        }
-    }    
-
     body {
         color: white;
         background-color: black;

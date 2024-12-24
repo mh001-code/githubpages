@@ -16,9 +16,8 @@ body {
 }
 
 .container {
-    padding: 0 20px; /* Ajustando o padding para não sobrecarregar o layout */
+    padding: 0 50px; /* Ajustando o padding para não sobrecarregar o layout */
     width: 100%; /* Garantir que o container ocupe 100% da largura */
-    max-width: 1200px; /* Definindo um limite máximo para evitar que o conteúdo estique demais em telas grandes */
     margin: 0 auto; /* Centralizar o conteúdo */
 }
 

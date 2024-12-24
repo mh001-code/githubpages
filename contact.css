@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+@media (max-width: 768px) {
+    /* Reduzindo o padding da .container */
+    .container {
+        padding: 0px 20px; /* Menos padding nas laterais para dispositivos móveis */
+    }
+
+    /* Ajustando o formulário */
+    .contact-form {
+        width: 100%;  /* Garante que o formulário ocupe 100% da largura disponível */
+        padding: 15px; /* Ajuste do padding para se adequar ao espaço */
+    }
+
+    /* Ajustando os inputs e textarea para ocupar 100% da largura */
+    .contact-form input, .contact-form textarea {
+        width: 100%; /* Garante que ocupem toda a largura disponível */
+        padding: 12px; /* Aumentando o padding para melhorar a interação */
+    }
+
+    /* Ajuste na largura dos botões */
+    .contact-form button {
+        width: 100%; /* O botão ocupará toda a largura disponível */
+        padding: 15px; /* Aumentando o padding do botão para dar mais conforto ao usuário */
+        font-size: 1.1em; /* Ajustando o tamanho da fonte */
+    }
+}
+
+/* Para garantir que o padding não altere as larguras */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     color: white;
     background-color: black;

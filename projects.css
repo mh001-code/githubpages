@@ -1,18 +1,32 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
     @media (max-width: 768px) {
+        /* Aumentando a largura do carrossel e dando um espaçamento adequado */
         .carousel {
-            width: 90%; /* Aumenta a largura do carrossel em telas menores */
+            width: 95%;  /* Mais largura para ocupar a tela inteira */
+            height: 300px; /* Ajuste de altura, para que o carrossel tenha uma altura razoável */
+        }
+    
+        .carousel-container {
+            height: 100%; /* Garantir que o container ocupe toda a altura do carrossel */
+        }
+    
+        .carousel-slide {
+            display: flex;
+            justify-content: center; /* Centraliza as imagens */
         }
     
         .carousel-slide img {
-            height: auto; /* Garante que as imagens se ajustem corretamente */
+            width: auto; /* Não forçar a largura para 100%, permitindo mais flexibilidade */
+            height: 100%; /* Garante que as imagens tenham a altura do container */
+            object-fit: cover; /* Garantir que a imagem cubra todo o espaço sem distorção */
         }
     
         .prev-btn, .next-btn {
-            padding: 8px; /* Reduz o tamanho dos botões de navegação */
+            padding: 12px; /* Aumentando um pouco o tamanho dos botões */
+            font-size: 24px; /* Tamanho da fonte para os botões de navegação */
         }
-    }    
+    }      
 
     body {
         color: white;

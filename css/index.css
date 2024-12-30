@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Garantir que o box-sizing seja aplicado de forma global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 50px; /* Ajustando o padding para não sobrecarregar o layout */
+    width: 100%; /* Garantir que o container ocupe 100% da largura */
+    margin: 0 auto; /* Centralizar o conteúdo */
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3CB371;
+    text-decoration: underline;
+}  
+
+a:focus {
+    outline: 2px solid #3CB371;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3CB371;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: #3CB371;
+}
+
+h3{
+    color: #3CB371;  
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 2px;
+}
+
+.container{
+    padding: 0px 50px;
+}
+
+nav a:hover{
+    color: #3CB371;
+}

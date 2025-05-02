@@ -36,19 +36,19 @@ a {
 }
 
 a:hover {
-    color: #3CB371;
+    color: #bb0a0a;
     text-decoration: underline;
 }  
 
 a:focus {
-    outline: 2px solid #3CB371;
+    outline: 2px solid #de0e0e;
 }
 
 header img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #3CB371;
+    border: 5px solid #de0e0e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -57,11 +57,11 @@ header img{
 }
 
 h1{
-    color: #3CB371;
+    color: #de0e0e;
 }
 
 h3{
-    color: #3CB371;  
+    color: #de0e0e;  
 }
 
 footer img{
@@ -88,5 +88,5 @@ footer p{
 }
 
 nav a:hover{
-    color: #3CB371;
+    color: #de0e0e;
 }

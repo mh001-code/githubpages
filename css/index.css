@@ -41,14 +41,14 @@ a:hover {
 }  
 
 a:focus {
-    outline: 2px solid #de0e0e;
+    outline: 2px solid #c0392b;
 }
 
 header img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #de0e0e;
+    border: 5px solid #c0392b;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -57,11 +57,11 @@ header img{
 }
 
 h1{
-    color: #de0e0e;
+    color: #c0392b;
 }
 
 h3{
-    color: #de0e0e;  
+    color: #c0392b;
 }
 
 footer img{
@@ -88,5 +88,5 @@ footer p{
 }
 
 nav a:hover{
-    color: #de0e0e;
+    color: #c0392b;
 }
